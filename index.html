@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maple Syrup 🍁</title>
+  </head>
+  <style>
+
+    html {
+      background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/770/original/background.jpg?1665178068);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    body {
+      color: #3E0E04;
+      font-family: "Celebri Sans", Helvetica, Arial, sans-serif;
+    }
+ 
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin: 25px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #D91E04;
+      margin: 10px 0 60px;
+    } 
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 55px; 
+      border-radius: 15px;
+    }
+
+    p {
+      margin: 40px 0 10px;
+      line-height: 1.5;
+      text-align: justify;
+    } 
+
+    ul {
+      list-style-type: "🍁";
+      padding: 0;
+    }
+
+    .list {
+      margin: 16px 17px;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+
+    .list-end {
+      margin-left: 75px;
+    }
+
+    .learn-more {
+      display: block;
+      margin-top: 13px;
+      text-decoration: none;
+      color: #D91E04;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .learn-more:hover,
+    .learn-more:focus {
+      color: #3E0E04;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .buy-button {
+      display: block;
+      margin: 35px auto 30px;
+      color: white;
+      background-color: rgba(62, 14, 4, 0.7);
+      font-size: 20px;
+      padding: 15px 30px;
+      border: 5px solid #3E0E04;
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 299ms ease-in-out;
+    }
+
+    .buy-button:hover {
+      background-color: #3E0E04;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 535px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-family: monospace;;
+    }
+
+  </style>
+  <body>
+    <div class="container">
+      <h1>
+        I love Maple Syrup
+      </h1>
+      <h2>
+        A natural healthy sweetener 
+      </h2>
+      <img
+        src="https://www.linkpicture.com/q/MapleSyrup.jpg"
+        type="image"
+        alt="Marple Syrup"
+      />
+      <p>
+        <strong>Maple syrup</strong> is made from the rising spring sap of a maple tree native to the US and Canada. It is reduced by boiling in open pan and when finished it is about 66 per cent sucrose and has a honey-like flavour. Although maple syrup is a sweetener, and therefore should be limited in the diet, it may contribute to better health in a few unique ways.
+      </p>
+      <div class="list">
+      <ul class="list-beginning">
+        <li>Gets a Lower Score on the Glycemic Index</li>
+        <li>May Help Protect Against Cancer</li>
+        <li>Helps Protect Skin Health</li>
+      </ul>
+      <ul class="list-end">
+        <li>Healthier Alternative to Sugar</li>
+        <li>Supplies Important Vitamins and Minerals</li>
+        <li>May Enhance Antibiotic Effects</li>
+      </ul>
+      </div>
+      <a
+        href="https://en.wikipedia.org/wiki/Maple_syrup"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="buy-button">
+        Buy 🍁 Syrup
+      </button>
+      <footer>
+        This page was built by Yuliia Demir
+      </footer>
+    </div>
+    <script>
+
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert("Thank you for a great choice, " + name + "! We'll be in touch by email 🍁")
+        } else {
+          alert("We need your contact information to proceed your order the quickest way. Please, try again 🍁")
+        }
+      }
+      
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+
+    </script>
+  </body>
+</html>
